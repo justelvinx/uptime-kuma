@@ -8,7 +8,7 @@ ARG BASE_IMAGE=louislam/uptime-kuma:base2
 FROM louislam/uptime-kuma:builder-go AS build_healthcheck
 
 ############################################
-# Build in Node.js
+# Build in Node.js with NPM
 ############################################
 FROM louislam/uptime-kuma:base2 AS build
 USER node
